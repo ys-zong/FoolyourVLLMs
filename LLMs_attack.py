@@ -341,7 +341,7 @@ def main(args):
             dev_df = pd.read_csv(os.path.join(args.data_dir, "dev", subject + "_dev.csv"), header=None)[:args.ntrain]
             test_df = pd.read_csv(os.path.join(args.data_dir, "test", subject + "_test.csv"), header=None)
             if args.use_subset:
-                test_df = test_df[:10]
+                test_df = test_df[:100]
             
             if args.permutation_attack or args.reduce_attack:
                 cors, acc = full_search_eval(args, subject, dev_df, test_df, model, tokenizer, n_reduced=args.n_reduced)

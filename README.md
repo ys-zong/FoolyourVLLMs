@@ -1,5 +1,5 @@
 # Fool your (V)LLMs
-Code for paper: Fool Your (Vision and) Language Model With Embarrassingly Simple Permutations
+Code for [paper](https://arxiv.org/abs/2310.01651): Fool Your (Vision and) Language Model With Embarrassingly Simple Permutations
 
 ## Environment
 ```bash
@@ -48,3 +48,13 @@ python LLMs_attack.py --data_dir ./data/MMLU/ --engine vicuna7b --position_permu
 - `--permutation_attack`: adversarial permutation to the options.
 - `--position_permute`: move all GT answers to certain position (A/B/C/D).
 - `--load_in_8bit`: (optional) 8 bit loading to fit large models into GPU memory.
+
+## Citation
+```
+@article{zong2023fool,
+  title={Fool Your (Vision and) Language Model With Embarrassingly Simple Permutations},
+  author={Zong, Yongshuo and Yu, Tingyang and Zhao, Bingchen and Chavhan, Ruchika and Hospedales, Timothy},
+  journal={arXiv preprint arXiv:2310.01651},
+  year={2023}
+}
+```

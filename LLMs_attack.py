@@ -379,7 +379,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--ntrain", "-k", type=int, default=0)
-    parser.add_argument("--data_dir", "-d", type=str, default="/home/co-zong1/rds/rds-bmai-cdt-zong-hiFUWVB9vu0/multimodal_data/MMLU")
+    parser.add_argument("--data_dir", "-d", type=str, default="data/MMLU")
     
     parser.add_argument("--engine", "-e", choices=["llama2-7b", "llama2-13b", "llama2-70b", "llama2-7b-chat", "vicuna7b", "vicuna13b",
                                                    "wizard-7b", "wizard-13b", "internlm-20b", "falcon-7b", "mpt-7b"],

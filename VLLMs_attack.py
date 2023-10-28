@@ -530,11 +530,6 @@ def main(args):
             print("Average accuracy per number of choices")
             for key, value in acc_per_length.items():
                 print(f"Length {key} - {value * 100:.2f}")
-        else:
-            acc_per_length = compute_avg_acc(all_accs)
-            print("Average accuracy")
-            for key, value in acc_per_length.items():
-                print(f"Length {key} - {value * 100:.2f}")
 
         del model
         del processor

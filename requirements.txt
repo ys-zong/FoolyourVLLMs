@@ -2,3 +2,7 @@ torch
 transformers
 pandas
 bitsandbytesit
+
+# for VL models
+open_flamingo[eval]
+otter_ai
